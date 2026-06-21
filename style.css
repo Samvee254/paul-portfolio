@@ -1,0 +1,447 @@
+/* ==========================================================
+   Paul Sumba Moses — Portfolio Stylesheet
+   Theme: Dark Blue / White / Gold
+   ========================================================== */
+
+:root {
+  --navy: #0A2647;
+  --navy-light: #163A5F;
+  --navy-dark: #061A33;
+  --gold: #D4AF37;
+  --gold-light: #E8C766;
+  --off-white: #F8F9FA;
+  --text-muted: #5C6B7A;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #1C2B39;
+  background-color: #FFFFFF;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== NAVBAR ===== */
+#mainNav {
+  background-color: var(--navy);
+  padding: 14px 0;
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+#mainNav.scrolled {
+  padding: 8px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  color: #FFFFFF !important;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.navbar-nav .nav-link {
+  color: #CBD5E1 !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+  margin: 0 8px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--gold) !important;
+}
+
+/* ===== HERO ===== */
+.hero-section {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  padding: 160px 0 100px;
+  color: #FFFFFF;
+}
+
+.hero-eyebrow {
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-role {
+  font-size: 1.2rem;
+  color: var(--gold-light);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.hero-subrole {
+  color: #CBD5E1;
+  font-size: 1rem;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  margin-bottom: 28px;
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--navy-dark);
+  font-weight: 600;
+  padding: 10px 26px;
+  border-radius: 6px;
+  border: 2px solid var(--gold);
+  margin-right: 12px;
+  transition: all 0.25s ease;
+}
+
+.btn-gold:hover {
+  background-color: transparent;
+  color: var(--gold);
+}
+
+.btn-outline-gold {
+  background-color: transparent;
+  color: var(--gold);
+  font-weight: 600;
+  padding: 10px 26px;
+  border-radius: 6px;
+  border: 2px solid var(--gold);
+  transition: all 0.25s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--gold);
+  color: var(--navy-dark);
+}
+
+.hero-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 50%;
+  color: var(--gold);
+  margin-right: 10px;
+  transition: all 0.25s ease;
+}
+
+.hero-socials a:hover {
+  background-color: var(--gold);
+  color: var(--navy-dark);
+  border-color: var(--gold);
+}
+
+.hero-photo-wrap {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 4px solid var(--gold);
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: var(--navy-light);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== SECTIONS GENERAL ===== */
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-alt {
+  background-color: var(--off-white);
+}
+
+.section-label {
+  color: var(--gold);
+  background-color: rgba(212, 175, 55, 0.12);
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-label-light {
+  background-color: rgba(212, 175, 55, 0.15);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 32px;
+}
+
+.lead-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* ===== ABOUT ===== */
+.about-card {
+  background-color: var(--navy);
+  border-radius: 12px;
+  padding: 30px;
+  color: #FFFFFF;
+}
+
+.about-card h3 {
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.bg-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-timeline li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.92rem;
+  color: #CBD5E1;
+}
+
+.bg-timeline li:last-child {
+  border-bottom: none;
+}
+
+.bg-timeline i {
+  color: var(--gold);
+  margin-right: 10px;
+  width: 18px;
+}
+
+/* ===== LEADERSHIP CARDS ===== */
+.leadership-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-top: 3px solid var(--gold);
+  border-radius: 10px;
+  padding: 28px 20px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(10, 38, 71, 0.12);
+}
+
+.leadership-card i {
+  font-size: 2rem;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.leadership-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.leadership-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ===== ADVOCACY CARDS ===== */
+.advocacy-card {
+  background-color: var(--navy);
+  border-radius: 10px;
+  padding: 30px 18px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.25s ease;
+}
+
+.advocacy-card:hover {
+  transform: translateY(-6px);
+}
+
+.advocacy-card i {
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+.advocacy-card h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* ===== EXPERIENCE ===== */
+.experience-card {
+  background-color: #FFFFFF;
+  border-left: 4px solid var(--navy);
+  border-radius: 8px;
+  padding: 26px;
+  height: 100%;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.05);
+}
+
+.experience-card h3 {
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.experience-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* ===== GALLERY ===== */
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.07);
+}
+
+.gallery-placeholder {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--off-white);
+  border: 2px dashed #D1D5DB;
+  border-radius: 10px;
+  color: var(--text-muted);
+}
+
+.gallery-placeholder i {
+  font-size: 2.2rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT / FOOTER ===== */
+.contact-section {
+  background-color: var(--navy-dark);
+  padding: 80px 0 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  transition: color 0.2s ease;
+}
+
+.contact-item i {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-right: 12px;
+  width: 24px;
+}
+
+.contact-item:hover {
+  color: var(--gold);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--gold);
+  font-size: 1.1rem;
+  transition: all 0.25s ease;
+}
+
+.footer-socials a:hover {
+  background-color: var(--gold);
+  color: var(--navy-dark);
+}
+
+.footer-divider {
+  border-color: rgba(255,255,255,0.1);
+  margin: 30px 0 20px;
+}
+
+.footer-bottom {
+  color: #8B97A4;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 140px 0 70px;
+    text-align: center;
+  }
+  .hero-photo-wrap {
+    margin-top: 40px;
+    width: 220px;
+    height: 220px;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .navbar-collapse {
+    background-color: var(--navy);
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 10px;
+  }
+}
