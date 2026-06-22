@@ -445,3 +445,22 @@ a {
     margin-top: 10px;
   }
 }
+/* ===== STATISTICS ===== */
+.stats-section {
+  background-color: var(--gold);
+  padding: 50px 0;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--navy-dark);
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  color: var(--navy);
+  font-weight: 500;
+  margin: 0;
+}
