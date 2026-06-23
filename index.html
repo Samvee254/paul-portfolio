@@ -27,15 +27,18 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
-          <li class="nav-item"><a class="nav-link" href="#advocacy">Advocacy</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+        
+<ul class="navbar-nav ms-auto">
+  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+  <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
+  <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+  <li class="nav-item"><a class="nav-link" href="#advocacy">Advocacy</a></li>
+  <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+  <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+  <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
       </div>
     </div>
   </nav>
@@ -165,37 +168,79 @@
   </section>
 
   <!-- ===== ADVOCACY & COMMUNITY IMPACT ===== -->
-  <section id="advocacy" class="section-padding">
-    <div class="container">
-      <p class="section-label">Advocacy &amp; community impact</p>
-      <h2 class="section-title">Making a difference</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="advocacy-card">
-            <i class="bi bi-heart-pulse-fill"></i>
-            <h3>Mental Health Advocate</h3>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="advocacy-card">
-            <i class="bi bi-chat-heart-fill"></i>
-            <h3>Peer Counselor</h3>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="advocacy-card">
-            <i class="bi bi-shield-fill-check"></i>
-            <h3>Drug &amp; Substance Abuse Prevention</h3>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="advocacy-card">
-            <i class="bi bi-stars"></i>
-            <h3>Youth Empowerment Activities</h3>
+<section id="advocacy" class="section-padding">
+  <div class="container">
+    <p class="section-label">Advocacy &amp; community impact</p>
+    <h2 class="section-title">Making a difference</h2>
+    <div class="accordion" id="advocacyAccordion">
+
+      <div class="accordion-item advocacy-accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mentalHealth" aria-expanded="true">
+            🧠 Mental Health Advocacy
+          </button>
+        </h2>
+        <div id="mentalHealth" class="accordion-collapse collapse show" data-bs-parent="#advocacyAccordion">
+          <div class="accordion-body">
+            Paul is a passionate mental health advocate committed to breaking the stigma surrounding mental health, especially among young people. Through peer counseling, awareness campaigns, and community outreach, he champions the importance of mental well-being as a foundation for personal and societal growth. He actively collaborates with institutions such as the Kenya Counselling and Psychological Association (KCPA) to promote accessible mental health support and education across Machakos County and beyond.
           </div>
         </div>
       </div>
+
+      <div class="accordion-item advocacy-accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#peerCounseling" aria-expanded="false">
+            🤝 Peer Counseling
+          </button>
+        </h2>
+        <div id="peerCounseling" class="accordion-collapse collapse" data-bs-parent="#advocacyAccordion">
+          <div class="accordion-body">
+            As a trained peer counselor, Paul provides guidance, emotional support, and a listening ear to fellow students navigating personal, academic, and social challenges. He believes that peer counseling creates safe spaces where young people feel heard, valued, and empowered to seek help without fear of judgment. His work in peer counseling is grounded in empathy, confidentiality, and a genuine commitment to student welfare.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item advocacy-accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#drugPrevention" aria-expanded="false">
+            🚫 Drug &amp; Substance Use Prevention
+          </button>
+        </h2>
+        <div id="drugPrevention" class="accordion-collapse collapse" data-bs-parent="#advocacyAccordion">
+          <div class="accordion-body">
+            Paul is passionate about promoting healthy lifestyles and preventing drug and substance misuse through education, awareness, and community engagement. He believes that prevention begins with empowering individuals — especially young people — with accurate information, life skills, and supportive environments that enable them to make informed decisions. Through advocacy, mentorship, and public health initiatives, he strives to reduce the stigma surrounding substance use disorders, encourage early intervention, and support evidence-based prevention strategies. His commitment is to work collaboratively with schools, communities, and relevant stakeholders to foster resilience, promote mental well-being, and contribute to building safer, healthier, and drug-free communities.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item advocacy-accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#youthEmpowerment" aria-expanded="false">
+            🌟 Youth Empowerment Initiative
+          </button>
+        </h2>
+        <div id="youthEmpowerment" class="accordion-collapse collapse" data-bs-parent="#advocacyAccordion">
+          <div class="accordion-body">
+            As a public health student and youth leader, Paul is passionate about empowering young people to become confident, responsible, and impactful members of society. He believes that every young person has the potential to create positive change when provided with the right opportunities, guidance, and support. His aim is to inspire and equip youths through mentorship, leadership development, health education, entrepreneurship, life skills, and community engagement. He is committed to creating platforms where young people can discover their talents, develop innovative ideas, and actively participate in solving the challenges facing their communities. Through collaboration with educational institutions, community organizations, government agencies, and other stakeholders, he aspires to promote youth participation in decision-making, encourage volunteerism, and advocate for equal access to education, employment, and personal development opportunities.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item advocacy-accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#neurogreen" aria-expanded="false">
+            🌱 The Neurogreen CBO
+          </button>
+        </h2>
+        <div id="neurogreen" class="accordion-collapse collapse" data-bs-parent="#advocacyAccordion">
+          <div class="accordion-body">
+            As the founder and Executive Director of The Neurogreen CBO in Machakos County, Paul drives community engagement initiatives focused on youth empowerment, environmental awareness, and sustainable community development. The organization serves as a platform for young people to actively participate in building healthier, greener, and more resilient communities through innovation, collaboration, and purposeful action.
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
   </section>
 
   <!-- ===== EXPERIENCE ===== -->

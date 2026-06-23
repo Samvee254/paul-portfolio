@@ -464,3 +464,40 @@ a {
   font-weight: 500;
   margin: 0;
 }
+/* ===== ADVOCACY ACCORDION ===== */
+.advocacy-accordion-item {
+  border: 1px solid #E8E8E8;
+  border-radius: 10px !important;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.advocacy-accordion-item .accordion-button {
+  background-color: #FFFFFF;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 10px !important;
+}
+
+.advocacy-accordion-item .accordion-button:not(.collapsed) {
+  background-color: var(--navy);
+  color: #FFFFFF;
+  box-shadow: none;
+}
+
+.advocacy-accordion-item .accordion-button::after {
+  filter: none;
+}
+
+.advocacy-accordion-item .accordion-button:not(.collapsed)::after {
+  filter: invert(1);
+}
+
+.advocacy-accordion-item .accordion-body {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  padding: 20px 24px;
+  border-top: 2px solid var(--gold);
+}
